@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Digital Clock</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body onload="changeRandomBackground()">
+    <div id="dropdown-container">
+      ▼
+      <div class="content">
+        <button class="apply" onclick="switchTimeDisplay()">
+          Switch Time Display
+        </button>
+        <button class="apply" onclick="changeRandomBackground()">
+          Change Background
+        </button>
+        <label>
+          Change Color of clock
+          <input type="color" id="inputColor" oninput="changeClockColor()" />
+        </label>
+      </div>
+    </div>
+
+    <div id="clock-container">
+      <div id="clock">00:00:00</div>
+    </div>
+
+    <script src="index.js"></script>
+  </body>
+</html>
