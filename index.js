@@ -33,6 +33,11 @@ function changeRandomBackground() {
   const body = document.getElementsByTagName("body")[0];
   body.style.backgroundImage = `url('img/background${backgroundNum}.jpg')`;
 }
+function changeBetterRandomBackground() {
+  const backgroundNum = Math.floor(Math.random() * (39 - 16 + 1)) + 16;
+  const body = document.getElementsByTagName("body")[0];
+  body.style.backgroundImage = `url('img/background${backgroundNum}.jpg')`;
+}
 
 function changeClockColor() {
   document.getElementById("clock").style.color =
